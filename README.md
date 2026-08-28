@@ -32,7 +32,7 @@ Users wishing to reproduce the analysis should obtain the source data from the o
 
 ## Analysis workflow
 
-The numbered Python scripts form a sequential pipeline:
+The numbered Python scripts under `source_code/` form a sequential pipeline:
 
 1. `1_data_reading.py` — reads and merges household electricity and environmental data and aggregates electricity measurements to 15-minute intervals.
 2. `2_imputation.py` — restricts the study period, treats missing values, and creates complete household-day profiles.
@@ -49,16 +49,31 @@ The numbered Python scripts form a sequential pipeline:
 ```text
 .
 ├── README.md
+├── LICENSE                 # MIT software license
+├── DATA_LICENSE.md         # CC BY 4.0 for derived/extended data
 ├── CITATION.cff
+├── .zenodo.json
 ├── requirements.txt
 ├── config.py
 ├── helpers.py
-├── source_code/
-├── Data/
-└── Outputs/
+├── source_code/            # numbered reproducible analysis scripts
+└── results/                # compact tables supporting the manuscript results
 ```
 
-`Data/House_*` source folders are intentionally excluded from version control. Derived datasets and extended-data materials supporting the manuscript will be archived separately with a persistent DOI before submission.
+The raw `Data/House_*` source folders are intentionally excluded from version control. The scripts create local `Data/` and `Outputs/` directories when the workflow is run. The complete underlying and extended data package will be archived separately with a persistent DOI.
+
+## Curated result tables
+
+The `results/` directory contains compact outputs supporting the principal findings, including:
+
+- DTW `k=2,...,20` clustering-evaluation metrics;
+- cluster-level `delta_load` descriptive statistics and inter-cluster variance;
+- DTW versus flexibility-aware DR-targeting scenarios;
+- DTW versus Euclidean DR-targeting scenarios;
+- Kruskal–Wallis results; and
+- a compact sensitivity summary for `k=4,...,12`.
+
+See `results/README.md` for details and for an important note about the scale of absolute `delta_load` values in the original implementation.
 
 ## Reproducing the analysis
 
@@ -74,6 +89,12 @@ pip install -r requirements.txt
 
 The principal analyses use 15-minute daily profiles (96 observations per day), a fixed random state of 42 where applicable, and a Sakoe–Chiba radius of six 15-minute intervals for DTW clustering.
 
+## Licensing
+
+- **Software/code:** MIT License (`LICENSE`).
+- **Derived data, result tables, figures and Extended Data:** CC BY 4.0 (`DATA_LICENSE.md`).
+- **Original PLEGMA Dataset:** subject to its original CC BY 4.0 dataset record and attribution requirements; it is not redistributed here.
+
 ## Availability
 
-The original PLEGMA source data are available through the DOI above. This GitHub repository provides the analysis code. A versioned archival release and the derived/extended data supporting the article will be deposited in a persistent research-data repository before manuscript submission; the final DOI will be added here and to the manuscript.
+The original PLEGMA source data are available through the DOI above. This GitHub repository provides the analysis code and compact result tables. A versioned software release and the complete derived/extended data supporting the article will be archived with persistent DOI(s) before manuscript submission; the final DOI(s) will be added here and to the Open Research Europe manuscript.
