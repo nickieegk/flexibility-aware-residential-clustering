@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Flexibility-Aware Clustering of Residential Electricity Consumption for Demand Response Targeting Using High-Resolution Smart Meter Data"
+message: "If you use this software or the associated analysis workflow, please cite this repository and the associated article when available."
+type: software
+authors:
+  - family-names: Gkolia
+    given-names: Nickie
+    email: ngkolia@epu.ntua.gr
+  - family-names: Dimitropoulos
+    given-names: Nikos
+    email: ndimitropoulos@epu.ntua.gr
+  - family-names: Marinakis
+    given-names: Vangelis
+    email: vmarinakis@epu.ntua.gr
+repository-code: "https://github.com/nickieegk/flexibility-aware-residential-clustering"
+license: MIT
+version: 1.0.0
