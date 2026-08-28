@@ -1,0 +1,40 @@
+{
+  "title": "Flexibility-Aware Clustering of Residential Electricity Consumption for Demand Response Targeting Using High-Resolution Smart Meter Data",
+  "description": "Reproducible analysis code and derived outputs for flexibility-aware residential electricity consumption clustering and demand-response targeting using the PLEGMA dataset.",
+  "creators": [
+    {
+      "name": "Gkolia, Nickie",
+      "affiliation": "Decision Support Systems Laboratory, School of Electrical and Computer Engineering, National Technical University of Athens, Athens, Greece"
+    },
+    {
+      "name": "Dimitropoulos, Nikos",
+      "affiliation": "Decision Support Systems Laboratory, School of Electrical and Computer Engineering, National Technical University of Athens, Athens, Greece"
+    },
+    {
+      "name": "Marinakis, Vangelis",
+      "affiliation": "Decision Support Systems Laboratory, School of Electrical and Computer Engineering, National Technical University of Athens, Athens, Greece"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "residential electricity consumption",
+    "demand response",
+    "flexibility",
+    "clustering",
+    "dynamic time warping",
+    "smart meter data",
+    "load profiling"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.15129/3b01a6c6-2efd-424a-b8b8-5fe7fa445ded",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1038/s41597-024-03208-0",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
