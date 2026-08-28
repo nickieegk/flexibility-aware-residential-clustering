@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+tslearn
+joblib
+threadpoolctl
+numba
+tqdm
+scikit-posthocs
