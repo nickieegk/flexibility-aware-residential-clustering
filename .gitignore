@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Original PLEGMA source data (obtain from official repository)
+Data/House_*/
+
+# Large/intermediate pipeline files regenerated from source data
+Data/1_all_data_merged.csv
+Data/2_targeted_period_imputated.csv
+
+# Temporary DTW / joblib artifacts
+*.mmap
+*.joblib
+*.pkl
+
+# Local-only configuration overrides
+config_local.py
